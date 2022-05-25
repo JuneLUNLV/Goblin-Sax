@@ -1,0 +1,68 @@
+.mainHeader{
+    color: #FFFFFF;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 82px;
+    font-weight: 600;
+    line-height: 1.1em;
+    letter-spacing: 0px;
+}
+
+.secondaryHeader{
+    columns: 1;
+    column-gap: 0px;
+    color: #FFFFFF;
+    font-family: "Inter", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 19px;
+    letter-spacing: 0px;
+    word-spacing: 3px;
+}
+
+.actionButton{
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    fill: #020710;
+    color: #020710;
+    background-color: #5dff63;;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #020710;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 10px 10px 0px 0px #fbfcff;
+    padding: 17px 30px 17px 30px;
+    cursor:pointer;
+}
+
+.statNumber{
+    color: #FFFFFF;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    margin-right:20px;
+}
+
+.statWords{
+    text-align: left;
+    color: #B3B4B7;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-right:50px;
+}
+
+.firstStat{
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #BFC0C2;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 0px 40px 0px 0px;
+    --e-column-margin-right: 40px;
+    --e-column-margin-left: 0px;
+    padding: 0px 0px 0px 0px;
+}

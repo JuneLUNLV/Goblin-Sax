@@ -34,7 +34,7 @@ export const DashboardNavbar = (props) => {
 
   return (
     <AppBar position="fixed" sx={{boxShadow:"none"}}>
-      <Container maxWidth="xl" sx={{width:'80%',maxWidth:'1200px'}}>
+      <Container maxWidth="xl" sx={{width:'80%',maxWidth:'1400px !important'}}>
         <Toolbar disableGutters>
         <Box sx={{
           cursor:'pointer',
