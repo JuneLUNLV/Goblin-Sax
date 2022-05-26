@@ -3,8 +3,13 @@
     src: url("/static/fonts/Blue_Goblet_Oblique.otf");
 }
 
+@font-face {
+    font-family: "VT323";
+    src: url("/static/fonts/VT323_Regular.ttf");
+}
+
 :root {
-    --main-font: Blue Goblet Oblique;
+    --main-font: VT323;
   }
 
 .mainHeader{
