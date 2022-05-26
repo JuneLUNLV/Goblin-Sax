@@ -8,7 +8,7 @@ export const FooterSection = (props) => {
 
     return (
         <section className="footerBackground" style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
-        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%","position":"relative","zIndex":"2","paddingTop":"2rem","paddingBottom":"0.5rem",my:'3rem'}}>
+        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%","position":"relative","zIndex":"2","paddingTop":"2rem","paddingBottom":"0.5rem",my:'3rem',justifyContent:'center'}}>
 
             <Box sx={{width:"40%"}}>
                 <Box sx={{mb:'0.5rem'}}>
