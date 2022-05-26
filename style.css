@@ -18,6 +18,31 @@
     line-height: 19px;
     letter-spacing: 0px;
     word-spacing: 3px;
+    display:flex;
+    white-space: pre-wrap;
+}
+
+.innerMainHeader{
+    text-align: left;
+    color: #FFFFFF;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1.1em;
+    letter-spacing: 0px;
+}
+
+.innerParagraph{
+    color: #A4A9AC;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.9em;
+}
+
+.secondaryHeaderSpecial{
+    color:#797a80;
+    white-space: pre-wrap;
 }
 
 .actionButton{
@@ -53,7 +78,6 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0px;
-    margin-right:50px;
 }
 
 .firstStat{
@@ -65,4 +89,144 @@
     --e-column-margin-right: 40px;
     --e-column-margin-left: 0px;
     padding: 0px 0px 0px 0px;
+}
+
+.stepBox{
+    margin: 0px 0px 30px 0px;
+    padding: 25px 25px 25px 25px;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #FFFFFF26 0%, #FFFFFF00 100%);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.stepHeader{
+    margin-bottom: 0px;
+    color: #02BFBF;
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.7em;
+}
+
+.stepParagraph{
+    color: #B3B4B7A1;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.stepNumber{
+    color: white;
+    font-size: 28px;
+}
+
+.actionBanner{
+    border-radius: 30px 30px 30px 30px;
+    background-color: #02BFBF;
+    padding: 60px 80px 60px 80px;
+}
+
+.actionBannerButton{
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #020710;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #020710;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px #fbfcff;
+    padding: 17px 30px 17px 30px;
+    height:fit-content;
+}
+
+.actionBannerHeader{
+    font-family: "Space Grotesk", Sans-serif;
+    font-weight: 700;
+    color: #020710;
+    font-size: 43px;
+    line-height: 1.1em;
+    letter-spacing: 0px;
+}
+
+.actionBannerParagraph{
+    text-align: left;
+    color: #020710;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.9em;
+}
+
+.joinButton{
+    font-family: "Space Grotesk", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    fill: #02BFBF;
+    color: #02BFBF;
+    background-color: #E0E7FA00;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #02BFBF;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px rgb(21 92 231 / 43%);
+    padding: 0px 0px 7px 0px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.joinButtonArrow{
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin-left: 8px;
+}
+
+.footerBackground{
+    background-image: url(https://toka.b-cdn.net/wp-content/themes/toka/assets/img/bg-black.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.footerSocial{
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color:white;
+}
+
+/* .footerSocial:before{
+    content: '|';
+    width: 8px;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: -0.014em;
+    color: #36bb91;
+    margin-right: 0.25rem;
+    margin-right: 0.5rem;
+    font-size: 30px;
+
+} */
+
+.footerSocialLink{
+    font-size: 14px;
+    letter-spacing: -0.0025em;
+    color:white;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.footerSocialLink:hover{
+    text-decoration: underline;
 }

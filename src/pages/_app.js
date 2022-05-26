@@ -19,7 +19,7 @@ const App = (props) => {
     <CacheProvider value={emotionCache}>
       <Head>
         <title>
-          Material Kit Pro
+        Goblin Sax
         </title>
         <meta
           name="viewport"

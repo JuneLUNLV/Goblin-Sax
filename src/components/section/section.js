@@ -3,11 +3,12 @@ import Image from 'next/image';
 
 export const Section = (props) => {
     return(
-        <section style={{width: "100%",display:'flex',justifyContent:'center'}}>
-        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",minHeight: "800px"}}>
+    <>
+        <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
+        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",minHeight: "800px",alignItems: "flex-end",paddingBottom:"100px"}}>
             <Box sx={{width:"50%"}}>
                 <Box>
-                <h5 className="secondaryHeader">GET LIQUIDITY WITH NFT</h5>
+                <h5 className="secondaryHeader">GET <h5 className="secondaryHeader secondaryHeaderSpecial">LIQUIDITY </h5>WITH NFT</h5>
                 </Box>
 
                 <Box>
@@ -27,7 +28,7 @@ export const Section = (props) => {
                             <h2 className="statNumber">
                                 1k+
                             </h2>
-                            <h5 className="statWords">
+                            <h5 className="statWords" style={{ marginRight:"40px"}}>
                                 Loan Approved
                             </h5>
                         </div>
@@ -46,11 +47,15 @@ export const Section = (props) => {
             <Box sx={{width:"50%"}}>
                 <Box sx={{mt:'5%'}}>
                 <Image src="/static/images/Goblin.png" height="770" width="941"/>
+                {/* <Image src="/static/images/Goblin2.png" height="366" width="402"/> */}
                 </Box>
-
             </Box>
         </Box>
+        <Box sx={{width:"100%", borderTop:"1px solid #DDDEE178",maxWidth:'1200px'}}>
+        
+        </Box>
     </section>
+    </>
     )
 
 
