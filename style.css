@@ -9,13 +9,19 @@
 }
 
 :root {
-    --main-font: VT323;
+    --main-font: "Space Grotesk", Sans-serif;
+    --main-color: /*#02BFBF;*/ #5dff63;
+    --main-font-2: Inter;
+    --main-header-fontSize: 82px;
+    --step-header-fontSize: 30px;
+    --step-paragraph-fontSize: 15px;
+
   }
 
 .mainHeader{
     color: #FFFFFF;
     font-family: var(--main-font);
-    font-size: 82px;
+    font-size: var(--main-header-fontSize);
     font-weight: 600;
     line-height: 1.1em;
     letter-spacing: 0px;
@@ -25,7 +31,7 @@
     columns: 1;
     column-gap: 0px;
     color: #FFFFFF;
-    font-family: var(--main-font);
+    font-family: var(--main-font-2);
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -66,7 +72,7 @@
     letter-spacing: 0.5px;
     fill: #020710;
     color: #020710;
-    background-color: #5dff63;;
+    background-color: var(--main-color);
     border-style: solid;
     border-width: 2px 2px 2px 2px;
     border-color: #020710;
@@ -115,9 +121,9 @@
 
 .stepHeader{
     margin-bottom: 0px;
-    color: #02BFBF;
+    color: var(--main-color);
     font-family: var(--main-font);
-    font-size: 35px;
+    font-size: var(--step-header-fontSize);
     font-weight: 600;
     line-height: 1.7em;
 }
@@ -125,7 +131,7 @@
 .stepParagraph{
     color: #B3B4B7A1;
     font-family: "DM Sans", Sans-serif;
-    font-size: 16px;
+    font-size: var(--step-paragraph-fontSize);
     font-weight: 400;
 }
 
@@ -137,7 +143,7 @@
 
 .actionBanner{
     border-radius: 30px 30px 30px 30px;
-    background-color: #02BFBF;
+    background-color: var(--main-color);
     padding: 60px 80px 60px 80px;
 }
 
@@ -181,11 +187,11 @@
     font-size: 18px;
     font-weight: 700;
     fill: #02BFBF;
-    color: #02BFBF;
+    color: var(--main-color);
     background-color: #E0E7FA00;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
-    border-color: #02BFBF;
+    border-color: var(--main-color);
     border-radius: 0px 0px 0px 0px;
     box-shadow: 0px 0px 0px 0px rgb(21 92 231 / 43%);
     padding: 0px 0px 7px 0px;

@@ -48,8 +48,9 @@ export const Section = (props) => {
 
             </Box>
             <Box sx={{width:"50%"}}>
-                <Box sx={{mt:'5%'}}>
-                <Image src="/static/images/Goblin.png" height="770" width="941"/>
+                <Box sx={{display:'flex'}}>
+                {/* <Image src="/static/images/Goblin.png" height="770" width="941"/> */}
+                <Image src="/static/images/pepes/Well memed.png" height="600" width="600"/>
                 {/* <Image src="/static/images/Goblin2.png" height="366" width="402"/> */}
                 </Box>
             </Box>

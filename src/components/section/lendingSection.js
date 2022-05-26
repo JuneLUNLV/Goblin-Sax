@@ -75,8 +75,9 @@ export const LendingSection = (props) => {
                     </Box>
             </Box>
             <Box sx={{width:"50%"}}>
-
-
+                <Box sx={{marginLeft: "25%",marginTop: "38px"}}>
+                    <Image src="/static/images/pepes/Money rain.png" height="600" width="600"/>
+                </Box>
             </Box>
         </Box>
         </section>

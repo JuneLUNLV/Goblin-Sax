@@ -7,6 +7,9 @@ export const AboutSection = (props) => {
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:"100px"}}>
             <Box sx={{width:"50%"}}>
+                <Box sx={{marginRight: "25%",marginTop: "-38px"}}>
+                    <Image src="/static/images/pepes/Business.png" height="600" width="600"/>
+                </Box>
             </Box>
             <Box sx={{width:"50%"}}>
                 <Box sx={{pb:'15px'}}>
