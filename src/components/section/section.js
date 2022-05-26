@@ -11,6 +11,9 @@ export const Section = (props) => {
                 <h5 className="secondaryHeader">GET <h5 className="secondaryHeader secondaryHeaderSpecial">LIQUIDITY </h5>WITH NFT</h5>
                 </Box>
 
+                <Box sx={{pt:'20px'}}>
+                </Box>
+
                 <Box>
                     <h1 className="mainHeader">The best DAO-enabled NFT loan platform</h1>
                 </Box>

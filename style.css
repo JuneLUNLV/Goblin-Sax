@@ -1,6 +1,15 @@
+@font-face {
+    font-family: "Blue Goblet Oblique";
+    src: url("/static/fonts/Blue_Goblet_Oblique.otf");
+}
+
+:root {
+    --main-font: Blue Goblet Oblique;
+  }
+
 .mainHeader{
     color: #FFFFFF;
-    font-family: "Space Grotesk", Sans-serif;
+    font-family: var(--main-font);
     font-size: 82px;
     font-weight: 600;
     line-height: 1.1em;
@@ -11,8 +20,8 @@
     columns: 1;
     column-gap: 0px;
     color: #FFFFFF;
-    font-family: "Inter", Sans-serif;
-    font-size: 16px;
+    font-family: var(--main-font);
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 19px;
@@ -25,8 +34,8 @@
 .innerMainHeader{
     text-align: left;
     color: #FFFFFF;
-    font-family: "Space Grotesk", Sans-serif;
-    font-size: 43px;
+    font-family: var(--main-font);
+    font-size: 50px;
     font-weight: 700;
     line-height: 1.1em;
     letter-spacing: 0px;
@@ -46,8 +55,8 @@
 }
 
 .actionButton{
-    font-family: "Space Grotesk", Sans-serif;
-    font-size: 20px;
+    font-family: var(--main-font);
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: 0.5px;
     fill: #020710;
@@ -102,8 +111,8 @@
 .stepHeader{
     margin-bottom: 0px;
     color: #02BFBF;
-    font-family: "Space Grotesk", Sans-serif;
-    font-size: 28px;
+    font-family: var(--main-font);
+    font-size: 35px;
     font-weight: 600;
     line-height: 1.7em;
 }
@@ -118,6 +127,7 @@
 .stepNumber{
     color: white;
     font-size: 28px;
+    font-family: var(--main-font);
 }
 
 .actionBanner{
@@ -127,10 +137,10 @@
 }
 
 .actionBannerButton{
-    font-family: "Space Grotesk", Sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    font-family: var(--main-font), Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
     fill: #FFFFFF;
     color: #FFFFFF;
     background-color: #020710;
@@ -144,7 +154,7 @@
 }
 
 .actionBannerHeader{
-    font-family: "Space Grotesk", Sans-serif;
+    font-family: var(--main-font), Sans-serif;
     font-weight: 700;
     color: #020710;
     font-size: 43px;
@@ -155,8 +165,8 @@
 .actionBannerParagraph{
     text-align: left;
     color: #020710;
-    font-family: "DM Sans", Sans-serif;
-    font-size: 20px;
+    font-family: var(--main-font), Sans-serif;
+    font-size: 25px;
     font-weight: 500;
     line-height: 1.9em;
 }
