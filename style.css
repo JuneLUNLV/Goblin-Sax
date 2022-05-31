@@ -8,21 +8,64 @@
     src: url("/static/fonts/VT323_Regular.ttf");
 }
 
+
+@font-face {
+    font-family: "Teko";
+    src: url("/static/fonts/Teko-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/static/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Archivo Black";
+    src: url("/static/fonts/ArchivoBlack-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Space Brotesk";
+    src: url("/static/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/static/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Goblin";
+    src: url("/static/fonts/Goblins.ttf");
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("/static/fonts/Minecraft.ttf");
+}
+
+
+
 :root {
     --main-font: "Space Grotesk", Sans-serif;
+    --main-header-font: Space Brotesk;
     --main-color: /*#02BFBF;*/ #5dff63;
     --main-font-2: Inter;
     --main-header-fontSize: 82px;
     --step-header-fontSize: 30px;
     --step-paragraph-fontSize: 15px;
+    --nav-bar-fontSize: 20px;
+    --actionbanner-button-fontSize: 20px;
+    --actionbanner-header-fontSize: 43px;
+    --actionbanner-paragraph-fontSize: 20px;
 
   }
-
+  
 .mainHeader{
     color: #FFFFFF;
-    font-family: var(--main-font);
+    font-family: var(--main-header-font);
     font-size: var(--main-header-fontSize);
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.1em;
     letter-spacing: 0px;
 }
@@ -31,9 +74,9 @@
     columns: 1;
     column-gap: 0px;
     color: #FFFFFF;
-    font-family: var(--main-font-2);
+    font-family: var(--main-header-font);
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     line-height: 19px;
     letter-spacing: 0px;
@@ -45,7 +88,7 @@
 .innerMainHeader{
     text-align: left;
     color: #FFFFFF;
-    font-family: var(--main-font);
+    font-family: var(--main-header-font);
     font-size: 50px;
     font-weight: 700;
     line-height: 1.1em;
@@ -66,7 +109,7 @@
 }
 
 .actionButton{
-    font-family: var(--main-font);
+   /* font-family: var(--main-font);
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -79,7 +122,27 @@
     border-radius: 0px 0px 0px 0px;
     box-shadow: 10px 10px 0px 0px #fbfcff;
     padding: 17px 30px 17px 30px;
+    cursor:pointer;*/
+
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #5dc961;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: #5dc961;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 10px 20px 0px rgb(62 187 54 / 28%);
+    padding: 17px 35px 17px 35px;
     cursor:pointer;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-box-shadow .3s;
+}
+
+.actionButton:hover{
+    background-color: #4c9f50;
 }
 
 .statNumber{
@@ -115,7 +178,16 @@
     margin: 0px 0px 30px 0px;
     padding: 25px 25px 25px 25px;
     background-color: transparent;
+    cursor:pointer;
+}
+
+.stepBoxActive{
     background-image: linear-gradient(180deg, #FFFFFF26 0%, #FFFFFF00 100%);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.stepBox:hover{
+    background-image: linear-gradient(180deg, #FFFFFF26 100%, #FFFFFF00 100%);
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -142,14 +214,19 @@
 }
 
 .actionBanner{
-    border-radius: 30px 30px 30px 30px;
-    background-color: var(--main-color);
-    padding: 60px 80px 60px 80px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #849AAA85;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 80px 80px 80px 80px;
+    background-color: #2A2B3169;
+    border-radius: 20px 20px 20px 20px;
+
 }
 
 .actionBannerButton{
-    font-family: var(--main-font), Sans-serif;
-    font-size: 25px;
+    font-family: var(--main-font);
+    font-size: var(--actionbanner-button-fontSize);
     font-weight: 600;
     letter-spacing: 1px;
     fill: #FFFFFF;
@@ -165,19 +242,19 @@
 }
 
 .actionBannerHeader{
-    font-family: var(--main-font), Sans-serif;
+    font-family: var(--main-font);
     font-weight: 700;
-    color: #020710;
-    font-size: 43px;
+    color: white;
+    font-size: var(--actionbanner-header-fontSize);
     line-height: 1.1em;
     letter-spacing: 0px;
 }
 
 .actionBannerParagraph{
     text-align: left;
-    color: #020710;
+    color: white;
     font-family: var(--main-font), Sans-serif;
-    font-size: 25px;
+    font-size: var(--actionbanner-paragraph-fontSize);
     font-weight: 500;
     line-height: 1.9em;
 }
@@ -197,6 +274,13 @@
     padding: 0px 0px 7px 0px;
     cursor:pointer;
     margin-top:20px;
+    /* transition: background-color 0.3s, border-color 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+}
+
+.joinButton:hover{
+    color:white;
+    border-color: white;
+
 }
 
 .joinButtonArrow{

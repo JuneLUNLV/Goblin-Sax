@@ -92,8 +92,7 @@ export const DashboardNavbar = (props) => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block',fontSize:'25px',fontFamily: "var(--main-font)" }}
-
+                sx={{ my: 2, color: 'white', display: 'block',fontSize:"var(--nav-bar-fontSize)",fontFamily: "var(--main-font)"}}
               >
                 {page}
               </Button>

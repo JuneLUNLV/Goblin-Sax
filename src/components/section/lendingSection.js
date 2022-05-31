@@ -1,8 +1,9 @@
 import { Box,Typography } from '@mui/material';
 import Image from 'next/image';
+import {useState} from 'react'
 
 export const LendingSection = (props) => {
-
+    const [stepBoxState, setStepBoxState] = useState(0);
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:"100px"}}>
@@ -16,7 +17,7 @@ export const LendingSection = (props) => {
                     </Box>
 
                     <Box>
-                        <Box className="stepBox">
+                        <Box className={`stepBox ${stepBoxState == 0 ? "stepBoxActive" : void(0)}`} onClick={(e)=>{setStepBoxState(0)}}>
                             <Box sx={{display:'flex',alignItems:'center'}}>
                                 <Box sx={{width:'10%'}}>
                                     <h1 className="stepNumber">
@@ -35,7 +36,7 @@ export const LendingSection = (props) => {
                             </Box>
                         </Box>
 
-                        <Box className="stepBox">
+                        <Box className={`stepBox ${stepBoxState == 1 ? "stepBoxActive" : void(1)}`} onClick={(e)=>{setStepBoxState(1)}}>
                         <Box sx={{display:'flex',alignItems:'center'}}>
                                 <Box sx={{width:'10%'}}>
                                     <h1 className="stepNumber">
@@ -54,7 +55,7 @@ export const LendingSection = (props) => {
                             </Box>
                         </Box>
 
-                        <Box className="stepBox">
+                        <Box className={`stepBox ${stepBoxState == 2 ? "stepBoxActive" : void(2)}`} onClick={(e)=>{setStepBoxState(2)}}>
                         <Box sx={{display:'flex',alignItems:'center'}}>
                                 <Box sx={{width:'10%'}}>
                                     <h1 className="stepNumber">
@@ -74,9 +75,11 @@ export const LendingSection = (props) => {
                         </Box>
                     </Box>
             </Box>
-            <Box sx={{width:"50%"}}>
-                <Box sx={{marginLeft: "25%",marginTop: "38px"}}>
-                    <Image src="/static/images/pepes/Money rain.png" height="600" width="600"/>
+            <Box sx={{width:"50%","display":"flex","justifyContent":"center","alignItems":"center","alignContent":"center"}}>
+                <Box sx={{}}>
+                    {stepBoxState == 0 ? <Image src="/static/images/pepes/Happy keyboard.png" height="400" width="400"/> : void(0)}
+                    {stepBoxState == 1 ? <Image src="/static/images/pepes/Loupe.png" height="400" width="400"/> : void(0)}
+                    {stepBoxState == 2 ? <Image src="/static/images/pepes/Money rain.png" height="400" width="400"/> : void(0)}                
                 </Box>
             </Box>
         </Box>
