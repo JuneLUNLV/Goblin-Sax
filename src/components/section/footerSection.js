@@ -27,7 +27,7 @@ export const FooterSection = (props) => {
             <Box sx={{width:"40%",ml:'10%'}}>
                 <Box >
                     <p className="footerSocial">
-                        SOCIAL
+                    
                     </p>
                 </Box>
                 <Box sx={{display:'flex',justifyContent:'space-between',width:'50%'}}>

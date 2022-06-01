@@ -76,8 +76,11 @@ export const LendingSection = (props) => {
                     </Box>
             </Box>
             <Box sx={{width:"50%","display":"flex","justifyContent":"flex-end","alignItems":"center","alignContent":"center"}}>
-                <Box sx={{}}>
-                    {stepBoxState == 0 ? <Image src="/static/images/pepes/PepeOk.png" height="450" width="450"/> : void(0)}
+                <Box sx={{
+                    marginTop: `${stepBoxState == 0 ? "100px" : "0px"}`,
+
+                }}>
+                    {stepBoxState == 0 ? <Image src="/static/images/pepes/Happy keyboard.png" height="450" width="450"/> : void(0)}
                     {stepBoxState == 1 ? <Image src="/static/images/pepes/Loupe.png" height="450" width="450"/> : void(0)}
                     {stepBoxState == 2 ? <Image src="/static/images/pepes/Money rain.png" height="450" width="450"/> : void(0)}                
                 </Box>

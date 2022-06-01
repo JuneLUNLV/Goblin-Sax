@@ -312,6 +312,7 @@
     color: white;
     margin-bottom: 20px;
     font-family: var(--main-header-font);
+    visibility: hidden;
 }
 
 /* .footerSocial:before{
