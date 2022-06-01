@@ -5,8 +5,8 @@ export const ActionSection = (props) => {
 
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
-        <Box className="actionBanner" sx={{maxWidth:'1200px',display:'flex',width:"100%"}}>
-            <Box sx={{width:'60%'}}>
+        <Box className="actionBanner" sx={{maxWidth:'1200px',display:'flex',width:"100%",flexDirection:{xs:"column",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
+            <Box sx={{width:{xs:"100%",md:"60%"}}}>
                 <Box sx={{mb:'20px'}}>
                     <h1 className="actionBannerHeader">
                         Seeking <span style={{color:"var(--main-color)"}}>liquidity</span> on your blue chip NFTs? 
@@ -20,7 +20,7 @@ export const ActionSection = (props) => {
                 </Box>      
             </Box>
 
-            <Box sx={{display:'flex',width:"40%",alignItems: "center",justifyContent: "flex-end"}}>
+            <Box sx={{display:'flex',width:{xs:"100%",md:"40%"},alignItems: "center",justifyContent: {xs:"center",md:"flex-end"}}}>
                 <button className="actionButton">
                     Request a Loan
                 </button>

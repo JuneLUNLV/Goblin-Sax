@@ -88,10 +88,14 @@ const Dashboard = () => {
     <AboutSection/>
     <Box sx={{display:{xs:"none",md:'block'}}}>
 
-    <LendingSection/>
+<LendingSection/>
+
+
+</Box>
     <ActionSection/>
+
     <JoinSection/>
-    </Box>
+
 
     </Box>
   </>

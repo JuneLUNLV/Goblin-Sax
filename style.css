@@ -86,7 +86,7 @@
     text-transform: uppercase;
     line-height: 19px;
     letter-spacing: 0px;
-    word-spacing: 3px;
+    word-spacing: 2px;
     display:flex;
     white-space: pre-wrap;
 }
@@ -343,7 +343,7 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     .mainHeader {
         font-size:40px;
         text-align:center;
@@ -372,6 +372,22 @@
     }
     .innerParagraph{
         font-size:16px;
+        text-align:justify;
+    }
+    .actionBanner{
+        padding: 30px 25px 30px 25px;
+    }
+    .actionBannerHeader{
+        text-align:center;
+        font-size:32px;
+    }
+    .actionBannerParagraph{
+        text-align:center;
+        font-size:16px;
+        margin-bottom: 20px;
+    }
+    .actionButton{
+        font-size:20px;
         text-align:center;
     }
   }

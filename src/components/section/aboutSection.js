@@ -7,7 +7,7 @@ export const AboutSection = (props) => {
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:{xs:"0px",md:"100px"},flexDirection:{xs:"column-reverse",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
-                <Box sx={{transform: {xs:"scale(0.9)",md:'none'}}}>
+                <Box sx={{transform: {xs:"scale(0.9)",md:'none'},display:'flex',justifyContent:'center'}}>
                     <Image src="/static/images/pepes/Business.png" height="450" width="450"/>
                 </Box>
             </Box>

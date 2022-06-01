@@ -8,7 +8,7 @@ export const Section = (props) => {
         <Box sx={{flexDirection:{xs:"column",md:"row"},alignItems:{xs:"flex-start",md:"center"},maxWidth:'1200px',display:'flex',width:"100%",minHeight: "800px",paddingBottom:"100px"}}>
             <Box sx={{width:{xs:"100%",md:"50%"},mb:{xs:"30px",md:"0"}}}>
                 <Box>
-                <h2 className="secondaryHeader">WHERE NFT <span className="secondaryHeader secondaryHeaderSpecial">NFT</span> MEETS <span className="secondaryHeader secondaryHeaderSpecial">DEFI</span></h2>
+                <h2 className="secondaryHeader">WHERE NFT <span className="secondaryHeader secondaryHeaderSpecial">NFT</span> MEETS DEFI</h2>
                 </Box>
 
                 <Box sx={{pt:'20px'}}>
