@@ -63,9 +63,9 @@
     --actionbanner-button-fontSize: 20px;
     --actionbanner-header-fontSize: 43px;
     --actionbanner-paragraph-fontSize: 20px;
+}
 
-  }
-  
+
 .mainHeader{
     color: #FFFFFF;
     font-family: var(--main-header-font);
@@ -73,6 +73,7 @@
     font-weight: 700;
     line-height: 1.1em;
     letter-spacing: 0px;
+    /* word-wrap: break-word; */
 }
 
 .secondaryHeader{
@@ -341,3 +342,28 @@
 .footerSocialLink:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1200px) {
+    .mainHeader {
+        font-size:40px;
+        text-align:center;
+        justify-content: center;
+    }
+    .secondaryHeader{
+        font-size:14px;
+        text-align:center;
+        justify-content: center;
+    }
+    .actionButton{
+        font-size:20px;
+        text-align:center;
+        justify-content: center;
+    }
+    .firstStat{
+        border:none;
+        margin:0;
+    }
+    .statWords{
+        margin:0 !important;
+    }
+  }

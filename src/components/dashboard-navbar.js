@@ -7,11 +7,9 @@ import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import Image from 'next/image'
 
 const pages = ['Loans', 'About Us', 'Our Team', 'Contact Us'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export const DashboardNavbar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -34,11 +32,11 @@ export const DashboardNavbar = (props) => {
 
   return (
     <AppBar position="fixed" sx={{boxShadow:"none"}}>
-      <Container maxWidth="xl" sx={{width:'80%',maxWidth:'1400px !important'}}>
+      <Container maxWidth="lg" sx={{width:{xs:'100%',md:'80%'},maxWidth:'1400px !important'}}>
         <Toolbar disableGutters>
         <Box sx={{
           cursor:'pointer',
-          display: { xs: 'none', md: 'flex' }
+          display: { xs: 'none', md: 'flex' },
         }}>
         <Image src="/static/logo.svg" height={100} width={150}/>
         </Box>
@@ -83,7 +81,7 @@ export const DashboardNavbar = (props) => {
           <Box sx={{
             cursor:'pointer',
             display: { xs: 'flex', md: 'none' }, 
-            mr: 1
+            flexGrow: "1"
           }}>
           <Image src="/static/logo.svg" height={100} width={150}/>
           </Box>

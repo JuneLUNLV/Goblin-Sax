@@ -53,7 +53,9 @@ const Dashboard = () => {
       component="main"
       sx={{
         flexGrow: 1,
-        py: 8
+        py: 8,
+        paddingLeft:{xs:'16px',sm:'24px'},
+        paddingRight:{xs:'16px',sm:'24px'}
       }}
     >
     {/* <Box sx={{ minWidth: 120,display:'flex',"alignContent":"center","justifyContent":"center","alignItems":"center" }}>
@@ -83,10 +85,13 @@ const Dashboard = () => {
 
     </Box> */}
     <Section/>
+    <Box sx={{display:{xs:"none",md:'block'}}}>
     <AboutSection/>
     <LendingSection/>
     <ActionSection/>
     <JoinSection/>
+    </Box>
+
     </Box>
   </>
 );

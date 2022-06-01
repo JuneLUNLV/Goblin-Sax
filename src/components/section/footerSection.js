@@ -7,10 +7,11 @@ const socials2 = ["Docs", "Github", "Forum"]
 export const FooterSection = (props) => {
 
     return (
-        <section className="footerBackground" style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
-        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%","position":"relative","zIndex":"2","paddingTop":"2rem","paddingBottom":"0.5rem",my:'3rem',justifyContent:'center'}}>
+        <section className="footerBackground" style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:{xs:"0px",md:"100px"}}}>
+        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%","position":"relative","zIndex":"2","paddingTop":"2rem","paddingBottom":"0.5rem",my:'3rem',justifyContent:'center', paddingLeft:{xs:'16px',sm:'24px'},
+        paddingRight:{xs:'16px',sm:'24px'},flexDirection:{xs:"column",md:"row"}}}>
 
-            <Box sx={{width:"40%"}}>
+            <Box sx={{width:{xs:"100%",md:"40%"}}}>
                 <Box sx={{mb:'0.5rem'}}>
                     <h1 style={{"fontWeight":"normal","fontSize":"30px","lineHeight":"41px","letterSpacing":"-0.021em",color:'white',marginBottom:"20px",fontFamily:"var(--main-header-font)"}}>
                         Goblin Sax
@@ -24,7 +25,7 @@ export const FooterSection = (props) => {
                 </Box>
             </Box>
 
-            <Box sx={{width:"40%",ml:'10%'}}>
+            <Box sx={{width:{xs:"100%",md:"40%"},ml:{xs:"0%",md:'10%'}}}>
                 <Box >
                     <p className="footerSocial">
                     
