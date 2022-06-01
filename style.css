@@ -208,7 +208,7 @@
 }
 
 .stepParagraph{
-    color: #B3B4B7A1;
+    color: #B3B4B7CC;
     font-family: var(--main-font);
     font-size: var(--step-paragraph-fontSize);
     font-weight: 400;
@@ -389,5 +389,16 @@
     .actionButton{
         font-size:20px;
         text-align:center;
+    }
+    .stepHeader{
+        font-size: 25px;
+        text-align:center;
+    }
+    .stepParagraph{
+        font-size: 16px;
+        text-align: center;
+    }
+    .stepBox{
+        padding: 25px 25px 25px 25px;
     }
   }

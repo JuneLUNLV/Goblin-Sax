@@ -6,8 +6,8 @@ export const LendingSection = (props) => {
     const [stepBoxState, setStepBoxState] = useState(0);
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
-        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:"100px"}}>
-            <Box sx={{width:"50%"}}>
+        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:"100px",py:{xs:"50px",md:"100px"},flexDirection:{xs:"column",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
+            <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{pb:'15px'}}>
                         <h2 className="secondaryHeader">NFT <h2 className="secondaryHeader secondaryHeaderSpecial">LENDING </h2></h2>
                     </Box>
@@ -19,7 +19,7 @@ export const LendingSection = (props) => {
                     <Box>
                         <Box className={`stepBox ${stepBoxState == 0 ? "stepBoxActive" : void(0)}`} onClick={(e)=>{setStepBoxState(0)}}>
                             <Box sx={{display:'flex',alignItems:'center'}}>
-                                <Box sx={{width:'10%'}}>
+                                <Box sx={{width:'10%',display:{xs:'none',md:'block'}}}>
                                     <h1 className="stepNumber">
                                         1
                                     </h1>
@@ -38,7 +38,7 @@ export const LendingSection = (props) => {
 
                         <Box className={`stepBox ${stepBoxState == 1 ? "stepBoxActive" : void(1)}`} onClick={(e)=>{setStepBoxState(1)}}>
                         <Box sx={{display:'flex',alignItems:'center'}}>
-                                <Box sx={{width:'10%'}}>
+                                <Box sx={{width:'10%',display:{xs:'none',md:'block'}}}>
                                     <h1 className="stepNumber">
                                         2
                                     </h1>
@@ -57,7 +57,7 @@ export const LendingSection = (props) => {
 
                         <Box className={`stepBox ${stepBoxState == 2 ? "stepBoxActive" : void(2)}`} onClick={(e)=>{setStepBoxState(2)}}>
                         <Box sx={{display:'flex',alignItems:'center'}}>
-                                <Box sx={{width:'10%'}}>
+                                <Box sx={{width:'10%',display:{xs:'none',md:'block'}}}>
                                     <h1 className="stepNumber">
                                         3
                                     </h1>
@@ -75,7 +75,7 @@ export const LendingSection = (props) => {
                         </Box>
                     </Box>
             </Box>
-            <Box sx={{width:"50%","display":"flex","justifyContent":"flex-end","alignItems":"center","alignContent":"center"}}>
+            <Box sx={{width:{xs:"100%",md:"50%"},"display":"flex","justifyContent":"flex-end","alignItems":"center","alignContent":"center",display:{xs:'none',md:'block'}}}>
                 <Box sx={{
                     marginTop: `${stepBoxState == 0 ? "100px" : "0px"}`,
 
