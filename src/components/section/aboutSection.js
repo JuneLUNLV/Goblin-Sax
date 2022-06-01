@@ -5,13 +5,13 @@ export const AboutSection = (props) => {
 
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
-        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:"100px"}}>
-            <Box sx={{width:"50%"}}>
-                <Box sx={{marginRight: "25%",marginTop: "-38px"}}>
-                    <Image src="/static/images/pepes/Business.png" height="600" width="600"/>
+        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:{xs:"0px",md:"100px"},flexDirection:{xs:"column-reverse",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
+            <Box sx={{width:{xs:"100%",md:"50%"}}}>
+                <Box sx={{transform: {xs:"scale(0.9)",md:'none'}}}>
+                    <Image src="/static/images/pepes/Business.png" height="450" width="450"/>
                 </Box>
             </Box>
-            <Box sx={{width:"50%"}}>
+            <Box sx={{width:{xs:"100%",md:"50%"},mb:{xs:"30px",md:"0"}}}>
                 <Box sx={{pb:'15px'}}>
                     <h2 className="secondaryHeader">About <h2 className="secondaryHeader secondaryHeaderSpecial">US </h2></h2>
                 </Box>

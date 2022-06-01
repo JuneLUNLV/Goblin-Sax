@@ -85,8 +85,9 @@ const Dashboard = () => {
 
     </Box> */}
     <Section/>
-    <Box sx={{display:{xs:"none",md:'block'}}}>
     <AboutSection/>
+    <Box sx={{display:{xs:"none",md:'block'}}}>
+
     <LendingSection/>
     <ActionSection/>
     <JoinSection/>

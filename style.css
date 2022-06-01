@@ -366,4 +366,12 @@
     .statWords{
         margin:0 !important;
     }
+    .innerMainHeader{
+        font-size:32px;
+        text-align:center;
+    }
+    .innerParagraph{
+        font-size:16px;
+        text-align:center;
+    }
   }
