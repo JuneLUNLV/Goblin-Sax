@@ -4,8 +4,8 @@ import Image from 'next/image';
 export const ActionSection = (props) => {
 
     return (
-        <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:{xs:"0px",md:"100px"}}}>
-        <Box className="actionBanner" sx={{maxWidth:'1200px',display:'flex',width:"100%",flexDirection:{xs:"column",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
+        <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
+        <Box className="actionBanner" sx={{maxWidth:'1200px',display:'flex',width:"100%",flexDirection:{xs:"column",md:"row"},alignItems:{xs:"flex-start",md:"center"},marginTop:{xs:"0px",md:"var(--main-section-interval)"}}}>
             <Box sx={{width:{xs:"100%",md:"60%"}}}>
                 <Box sx={{mb:'20px'}}>
                     <h1 className="actionBannerHeader">

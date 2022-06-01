@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const JoinSection = (props) => {
 
     return (
-        <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
+        <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop: "var(--main-section-interval)"}}>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:{xs:"0px",md:"100px"},flexDirection:{xs:"column-reverse",md:"row"},alignItems:{xs:"center",md:"flex-start"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{transform: {xs:"scale(0.9)",md:'none'},display:'flex',justifyContent:'center'}}>

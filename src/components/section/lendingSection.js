@@ -5,7 +5,7 @@ import {useState} from 'react'
 export const LendingSection = (props) => {
     const [stepBoxState, setStepBoxState] = useState(0);
     return (
-        <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop:"100px"}}>
+        <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop: "var(--main-section-interval)"}}>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:"100px",py:{xs:"50px",md:"100px"},flexDirection:{xs:"column",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{pb:'15px'}}>
