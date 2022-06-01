@@ -13,34 +13,34 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 const Dashboard = () => {
-  const [fontArray,setFontArray] = useState([]);
-  const [fontChose,setFontChose] = useState("Space Grotesk")
-  useEffect(() => {
-    let { fonts } = document;
-    const it = fonts.entries();
+  // const [fontArray,setFontArray] = useState([]);
+  // const [fontChose,setFontChose] = useState("Imperial Roman")
+  // useEffect(() => {
+  //   let { fonts } = document;
+  //   const it = fonts.entries();
   
-    let arr = [];
-    let done = false;
+  //   let arr = [];
+  //   let done = false;
   
-    while (!done) {
-      const font = it.next();
-      if (!font.done) {
-        arr.push(font.value[0].family);
-      } else {
-        done = font.done;
-      }
-    }
+  //   while (!done) {
+  //     const font = it.next();
+  //     if (!font.done) {
+  //       arr.push(font.value[0].family);
+  //     } else {
+  //       done = font.done;
+  //     }
+  //   }
 
-    let fontsArr = [...new Set(arr)];
-    setFontArray(fontsArr);
-    setFontChose("Space Grotesk")
-  },[]);
+  //   let fontsArr = [...new Set(arr)];
+  //   setFontArray(fontsArr);
+  //   setFontChose("Imperial Roman")
+  // },[]);
 
-  const handleChange = (event) => {
-    setFontChose(event.target.value);
-    var r = document.querySelector(':root');
-    r.style.setProperty('--main-header-font', event.target.value);
-  };
+  // const handleChange = (event) => {
+  //   setFontChose(event.target.value);
+  //   var r = document.querySelector(':root');
+  //   r.style.setProperty('--main-header-font', event.target.value);
+  // };
 
   return(
   <>
@@ -56,7 +56,7 @@ const Dashboard = () => {
         py: 8
       }}
     >
-    <Box sx={{ minWidth: 120,display:'flex',"alignContent":"center","justifyContent":"center","alignItems":"center" }}>
+    {/* <Box sx={{ minWidth: 120,display:'flex',"alignContent":"center","justifyContent":"center","alignItems":"center" }}>
       <h1 style={{color:'white',marginRight:"50px"}}>Select the header font family: </h1>
       {fontArray.length == 0? void(0) : 
         <FormControl style={{border: '1px solid white', width:"fit-content"}}>
@@ -81,7 +81,7 @@ const Dashboard = () => {
       </FormControl>  
       }
 
-    </Box>
+    </Box> */}
     <Section/>
     <AboutSection/>
     <LendingSection/>

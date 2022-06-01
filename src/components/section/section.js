@@ -8,14 +8,14 @@ export const Section = (props) => {
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",minHeight: "800px",alignItems: "flex-end",paddingBottom:"100px"}}>
             <Box sx={{width:"50%"}}>
                 <Box>
-                <h5 className="secondaryHeader">GET <h5 className="secondaryHeader secondaryHeaderSpecial">LIQUIDITY </h5>WITH NFT</h5>
+                <h2 className="secondaryHeader">WHERE NFT <span className="secondaryHeader secondaryHeaderSpecial">NFT</span> MEETS <span className="secondaryHeader secondaryHeaderSpecial">DEFI</span></h2>
                 </Box>
 
                 <Box sx={{pt:'20px'}}>
                 </Box>
 
                 <Box>
-                    <h1 className="mainHeader">The best DAO-enabled NFT loan platform</h1>
+                    <h1 className="mainHeader">The NFT Financialization DAO</h1>
                 </Box>
 
                 <Box sx={{pt:'40px'}}>
@@ -29,19 +29,19 @@ export const Section = (props) => {
                     <Box sx={{display:'flex'}}>
                         <div style={{display:'flex',alignItems:'center'}} className="firstStat">
                             <h2 className="statNumber">
-                                1k+
+                                100+
                             </h2>
-                            <h5 className="statWords" style={{ marginRight:"40px"}}>
-                                Loan Approved
-                            </h5>
+                            <h2 className="statWords" style={{ marginRight:"40px"}}>
+                                ETH LENT
+                            </h2>
                         </div>
                         <div style={{display:'flex',alignItems:'center'}} >
                         <h2 className="statNumber">
-                                $20k+
+                                $1M+
                             </h2>
-                            <h5 className="statWords">
+                            <h2 className="statWords">
                                 {"Raised"}
-                            </h5>
+                            </h2>
                         </div>
                     </Box>
                 </Box>
@@ -50,7 +50,7 @@ export const Section = (props) => {
             <Box sx={{width:"50%"}}>
                 <Box sx={{display:'flex'}}>
                 {/* <Image src="/static/images/Goblin.png" height="770" width="941"/> */}
-                <Image src="/static/images/pepes/Well memed.png" height="600" width="600"/>
+                <Image src="/static/images/pepes/Well memed2.png" height="600" width="600"/>
                 {/* <Image src="/static/images/Goblin2.png" height="366" width="402"/> */}
                 </Box>
             </Box>

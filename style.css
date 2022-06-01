@@ -44,11 +44,16 @@
     src: url("/static/fonts/Minecraft.ttf");
 }
 
+@font-face {
+    font-family: "Imperial Roman";
+    src: url("/static/fonts/ImperialBT.ttf");
+}
+
 
 
 :root {
-    --main-font: "Space Grotesk", Sans-serif;
-    --main-header-font: Space Brotesk;
+    --main-font: Roboto, Sans-serif;
+    --main-header-font: Imperial Roman;
     --main-color: /*#02BFBF;*/ #5dff63;
     --main-font-2: Inter;
     --main-header-fontSize: 82px;
@@ -74,9 +79,9 @@
     columns: 1;
     column-gap: 0px;
     color: #FFFFFF;
-    font-family: var(--main-header-font);
+    font-family: var(--main-font);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 19px;
     letter-spacing: 0px;
@@ -93,11 +98,12 @@
     font-weight: 700;
     line-height: 1.1em;
     letter-spacing: 0px;
+    
 }
 
 .innerParagraph{
     color: #A4A9AC;
-    font-family: "DM Sans", Sans-serif;
+    font-family: var(--main-font);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.9em;
@@ -147,7 +153,7 @@
 
 .statNumber{
     color: #FFFFFF;
-    font-family: "Space Grotesk", Sans-serif;
+    font-family: var(--main-font);
     font-size: 46px;
     font-weight: 700;
     margin-right:20px;
@@ -156,7 +162,7 @@
 .statWords{
     text-align: left;
     color: #B3B4B7;
-    font-family: "DM Sans", Sans-serif;
+    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -182,7 +188,7 @@
 }
 
 .stepBoxActive{
-    background-image: linear-gradient(180deg, #FFFFFF26 0%, #FFFFFF00 100%);
+    background: #FFFFFF26;
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -202,7 +208,7 @@
 
 .stepParagraph{
     color: #B3B4B7A1;
-    font-family: "DM Sans", Sans-serif;
+    font-family: var(--main-font);
     font-size: var(--step-paragraph-fontSize);
     font-weight: 400;
 }
@@ -253,14 +259,14 @@
 .actionBannerParagraph{
     text-align: left;
     color: white;
-    font-family: var(--main-font), Sans-serif;
+    font-family: var(--main-font);
     font-size: var(--actionbanner-paragraph-fontSize);
     font-weight: 500;
     line-height: 1.9em;
 }
 
 .joinButton{
-    font-family: "Space Grotesk", Sans-serif;
+    font-family: var(--main-font);
     font-size: 18px;
     font-weight: 700;
     fill: #02BFBF;
@@ -299,15 +305,13 @@
 }
 
 .footerSocial{
-    margin-top: 0;
-    margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 30px;
-    line-height: 1.5;
-    font-family: inherit;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color:white;
+    line-height: 41px;
+    letter-spacing: -0.021em;
+    color: white;
+    margin-bottom: 20px;
+    font-family: var(--main-header-font);
 }
 
 /* .footerSocial:before{
@@ -330,6 +334,7 @@
     color:white;
     margin-bottom:10px;
     cursor:pointer;
+    font-family: var(--main-font);
 }
 
 .footerSocialLink:hover{

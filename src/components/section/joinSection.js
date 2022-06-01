@@ -13,7 +13,7 @@ export const JoinSection = (props) => {
             </Box>
             <Box sx={{width:"50%"}}>
                 <Box sx={{pb:'15px'}}>
-                    <h5 className="secondaryHeader">JOIN THE <h5 className="secondaryHeader secondaryHeaderSpecial">DAO </h5></h5>
+                    <h2 className="secondaryHeader">JOIN THE <h2 className="secondaryHeader secondaryHeaderSpecial">DAO </h2></h2>
                 </Box>
 
                 <Box sx={{pb:'20px'}}>
