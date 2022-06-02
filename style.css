@@ -49,14 +49,18 @@
     src: url("/static/fonts/ImperialBT.ttf");
 }
 
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("/static/fonts/LibreBaskerville-Bold.ttf");
+}
 
 
 :root {
     --main-font: Roboto, Sans-serif;
-    --main-header-font: Imperial Roman;
+    --main-header-font: Libre Baskerville;
     --main-color: /*#02BFBF;*/ #5dff63;
     --main-font-2: Inter;
-    --main-header-fontSize: 82px;
+    --main-header-fontSize: 75px;
     --step-header-fontSize: 30px;
     --step-paragraph-fontSize: 15px;
     --nav-bar-fontSize: 20px;
@@ -344,6 +348,30 @@
     text-decoration: underline;
 }
 
+.navLink{
+    text-decoration: none;
+    color:white;
+}
+
+.navLink:hover{
+    color:var(--main-color);
+}
+
+.phoneNavLink{
+    text-decoration: none;
+    color:black;  
+}
+
+.phoneNavLink:hover{
+    color:var(--main-color);
+}
+
+.anchorForLink{
+    position: absolute;
+    transform: translateY(-50vh);
+    visibility:hidden;
+}
+
 @media screen and (max-width: 1000px) {
     .mainHeader {
         font-size:40px;
@@ -401,5 +429,6 @@
     }
     .stepBox{
         padding: 25px 25px 25px 25px;
+        margin-bottom: 0px;
     }
   }

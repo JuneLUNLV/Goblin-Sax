@@ -90,7 +90,6 @@ const Dashboard = () => {
     <ActionSection/>
     <JoinSection/>
 
-
     </Box>
   </>
 );

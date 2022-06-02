@@ -5,6 +5,7 @@ export const JoinSection = (props) => {
 
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop: "var(--main-section-interval)"}}>
+        <a id="contact_us" className="anchorForLink"></a>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:{xs:"0px",md:"100px"},flexDirection:{xs:"column-reverse",md:"row"},alignItems:{xs:"center",md:"flex-start"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{transform: {xs:"scale(0.9)",md:'none'},display:'flex',justifyContent:'center'}}>
@@ -21,16 +22,21 @@ export const JoinSection = (props) => {
                 </Box>
 
                 <Box>
-                    <p className="innerParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p className="innerParagraph">Goblin Sax is a collective of goblins who want to push the boundaries of NFTs as an asset class. As the NFT sector grows and achieves greater adoption, we are excited by the financialization primitives and use cases that can be built on top of it.<br/><br/>
+                    To turn this dream into reality, we have gathered a collective of NFT enthusiasts, data scientists, engineers and project managers. Navigating the intersection of intersection between DeFi and NFTs is our bread and butter.<br/><br/>
+                    If this excites you, you may be the Goblin we are looking for. Say gm in our Discord and we can’t wait to welcome you to Goblin Sax!</p>
                 </Box>
 
                 <Box sx={{display:'flex',justifyContent:{xs:"center",md:"flex-start"}}}>
+                <a target="_blank" href="https://discord.gg/GS6rvrvb9B" rel="noopener noreferrer">
                     <button className="joinButton">
                         Join Our Discord
                         <span className="joinButtonArrow">
                             ➔
                         </span>
                     </button>
+                </a>
+
                 </Box>
             </Box>
         </Box>

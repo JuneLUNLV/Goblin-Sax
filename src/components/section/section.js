@@ -8,7 +8,7 @@ export const Section = (props) => {
         <Box sx={{flexDirection:{xs:"column",md:"row"},alignItems:{xs:"flex-start",md:"center"},maxWidth:'1200px',display:'flex',width:"100%",minHeight: "800px",paddingBottom:"100px"}}>
             <Box sx={{width:{xs:"100%",md:"50%"},mb:{xs:"30px",md:"0"}}}>
                 <Box>
-                <h2 className="secondaryHeader">WHERE NFT <span className="secondaryHeader secondaryHeaderSpecial">NFT</span> MEETS DEFI</h2>
+                <h2 className="secondaryHeader">WHERE <span className="secondaryHeader secondaryHeaderSpecial">NFT</span> MEETS DEFI</h2>
                 </Box>
 
                 <Box sx={{pt:'20px'}}>
@@ -22,14 +22,16 @@ export const Section = (props) => {
                 </Box>
 
                 <Box sx={{display:'flex',justifyContent:{xs:"center",md:"flex-start"}}}>
-                    <button className="actionButton">Apply for a Loan Now</button>
+                    <a target="_blank" href="https://forms.gle/fsn85QLCNH7TGyBb9" rel="noopener noreferrer">
+                        <button className="actionButton">Apply for a Loan Now</button>
+                    </a>
                 </Box>
 
                 <Box sx={{pt:{xs:"40px",md:"120px"}}}>
                     <Box sx={{display:'flex',flexDirection:{xs:"column",md:"row"},alignItems:{xs:'center',md:"flex-start"}}}>
                         <div style={{display:'flex',alignItems:'center'}} className="firstStat">
                             <h2 className="statNumber">
-                                100+
+                                200+
                             </h2>
                             <h2 className="statWords" style={{ marginRight:"40px"}}>
                                 ETH LENT
@@ -37,7 +39,7 @@ export const Section = (props) => {
                         </div>
                         <div style={{display:'flex',alignItems:'center'}} >
                         <h2 className="statNumber">
-                                $1M+
+                                $1.5M+
                             </h2>
                             <h2 className="statWords">
                                 {"Raised"}

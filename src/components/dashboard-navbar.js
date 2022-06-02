@@ -9,7 +9,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image'
 
-const pages = ['Loans', 'About Us', 'Our Team', 'Contact Us'];
+const pages = ['About Us','NFT Lending', "Request a Loan", 'Contact Us'];
+const links = ["/#about_us","/#nft_lending","/#request_a_loan","/#contact_us"]
 
 export const DashboardNavbar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,6 +30,7 @@ export const DashboardNavbar = (props) => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
 
   return (
     <AppBar position="fixed" sx={{boxShadow:"none"}}>
@@ -71,9 +73,11 @@ export const DashboardNavbar = (props) => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+              {pages.map((page,index) => (
+                <MenuItem key={page}>
+                <a target={`${"_self"}`}  href={links[index]} rel="noopener noreferrer"  className="phoneNavLink">
                   <Typography textAlign="center">{page}</Typography>
+                </a>
                 </MenuItem>
               ))}
             </Menu>
@@ -86,14 +90,15 @@ export const DashboardNavbar = (props) => {
           <Image src="/static/logo.svg" height={100} width={150}/>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } , justifyContent: "flex-end"}}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block',fontSize:"var(--nav-bar-fontSize)",fontFamily: "var(--main-font)"}}
-              >
-                {page}
-              </Button>
+            {pages.map((page,index) => (
+              <a target={`${"_self"}`} href={links[index]} rel="noopener noreferrer" key={page} className="navLink">
+                <Button
+                  sx={{ my: 2, color: 'white', display: 'block',fontSize:"var(--nav-bar-fontSize)",fontFamily: "var(--main-font)", color:"inherit"}}
+                >
+                  {page}
+                </Button>
+              </a>
+
             ))}
           </Box>
 

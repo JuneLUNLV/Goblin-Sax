@@ -5,6 +5,7 @@ export const AboutSection = (props) => {
 
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop: "var(--main-section-interval)"}}>
+        <a id="about_us" className="anchorForLink"></a>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:{xs:"0px",md:"100px"},flexDirection:{xs:"column-reverse",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{transform: {xs:"scale(0.9)",md:'none'},display:'flex',justifyContent:'center'}}>
@@ -21,7 +22,9 @@ export const AboutSection = (props) => {
                 </Box>
 
                 <Box>
-                    <p className="innerParagraph">We are a collective that believes in the future of NFT financialization. As the NFT sector matures, we envision more financialization use cases coming to NFTs, regardless whether it is lending, perpetual futures or options. Currently, we are focused on unlocking NFT liquidity and have provided XX+ ETH in NFT-collateralized loans. We are NFT enthusiasts, data scientists, engineers and project managers. We are the people that will make NFT financialization a reality. If you are passionate about the space, we would like to work with you</p>
+                    <p className="innerParagraph">We are a collective that believes in the future of NFT financialization. As the NFT sector matures, we envision more financialization use cases coming to NFTs, such as lending, perpetual futures or options. We are now focused on unlocking liquidity from NFTs and have provided 200+ ETH in NFT-collateralized loans.
+                    <br/><br/>
+                    We are NFT enthusiasts, data scientists, engineers and project managers. We are the people that will make NFT financialization a reality. If you are passionate about the space, we would like to work with you.</p>
                 </Box>
 
             </Box>

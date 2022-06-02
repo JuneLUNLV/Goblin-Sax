@@ -3,7 +3,9 @@ import Image from 'next/image';
 
 
 const socials = ["Twitter","Discord","Medium"]
-const socials2 = ["Docs", "Github", "Forum"]
+const socials2 = ["Dashboard", "Github", "Forum"]
+const links = ["https://twitter.com/goblinsax","https://discord.gg/GS6rvrvb9B","https://medium.com/@goblinsax"]
+const links2 = ["https://dash.goblinsax.xyz/","https://github.com/GringottsBank","https://gov.goblinsax.com/"]
 export const FooterSection = (props) => {
 
     return (
@@ -20,7 +22,7 @@ export const FooterSection = (props) => {
 
                 <Box sx={{mb:'0.5rem'}}>
                     <p style={{"fontSize":"15px","lineHeight":"1.5","letterSpacing":"-0.009em",color:'white',fontFamily:"var(--main-font)"}}>
-                        Goblin Sax is an NFT financialization collective currently focused on the NFT lending space. 
+                         Goblin Sax is an NFT financialization collective and we currently make NFT-collateralized loans to NFT holders
                     </p>
                 </Box>
             </Box>
@@ -37,7 +39,7 @@ export const FooterSection = (props) => {
                             socials.map((v,i)=>{
                                 return(
                                     <Box key={v} sx={{mb:'10px'}}>
-                                        <a className="footerSocialLink">
+                                        <a className="footerSocialLink" href={links[i]} target="_blank" rel="noopener noreferrer">
                                             {v}
                                         </a>
                                     </Box>
@@ -50,7 +52,7 @@ export const FooterSection = (props) => {
                             socials2.map((v,i)=>{
                                 return(
                                     <Box key={v} sx={{mb:'10px'}}>
-                                        <a className="footerSocialLink">
+                                        <a className="footerSocialLink" href={links2[i]} target="_blank" rel="noopener noreferrer">
                                             {v}
                                         </a>
                                     </Box>

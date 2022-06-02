@@ -1,11 +1,19 @@
 import { Box,Typography } from '@mui/material';
 import Image from 'next/image';
-import {useState} from 'react'
+import {useState,useEffect} from 'react';
+
 
 export const LendingSection = (props) => {
     const [stepBoxState, setStepBoxState] = useState(0);
+    useEffect(()=>{
+        const intervalHandler = setInterval(()=>{
+            setStepBoxState(stepBoxState => (Number(stepBoxState) + 1)%3);
+        },5000)
+        return () => clearInterval(intervalHandler);
+    },[])
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop: "var(--main-section-interval)"}}>
+        <a id="nft_lending" className="anchorForLink"></a>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:"100px",py:{xs:"50px",md:"100px"},flexDirection:{xs:"column",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{pb:'15px'}}>
@@ -30,7 +38,7 @@ export const LendingSection = (props) => {
                                         Send us a Loan Request
                                     </h1>
                                     <h2 className="stepParagraph">
-                                        Send your loan request via NFTfi or our loan request form
+                                        Apply through our loan request form or via NFTfi
                                     </h2>
                                 </Box>
                             </Box>
@@ -65,7 +73,7 @@ export const LendingSection = (props) => {
 
                                 <Box>
                                     <h1 className="stepHeader">
-                                        Offer & disburse loans
+                                        We offer & disburse your loan
                                     </h1>
                                     <h2 className="stepParagraph">
                                         Within 48 hours, we will offer a loan and can disburse funds immediately.
