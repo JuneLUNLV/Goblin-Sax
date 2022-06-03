@@ -8,13 +8,13 @@ export const AboutSection = (props) => {
         <a id="about_us" className="anchorForLink"></a>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:{xs:"0px",md:"100px"},flexDirection:{xs:"column-reverse",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
-                <Box sx={{transform: {xs:"scale(0.9)",md:'none'},display:'flex',justifyContent:'center'}}>
+                <Box sx={{transform: {xs:"scale(0.9)",md:'none'},display:'flex',justifyContent:{xs:'center',md:'flex-start'}}}>
                     <Image src="/static/images/pepes/Business.png" height="450" width="450"/>
                 </Box>
             </Box>
             <Box sx={{width:{xs:"100%",md:"50%"},mb:{xs:"30px",md:"0"}}}>
                 <Box sx={{pb:'15px'}}>
-                    <h2 className="secondaryHeader">About <h2 className="secondaryHeader secondaryHeaderSpecial">US </h2></h2>
+                    <h2 className="secondaryHeader">About <span className="secondaryHeader secondaryHeaderSpecial">US </span></h2>
                 </Box>
 
                 <Box sx={{pb:'20px'}}>

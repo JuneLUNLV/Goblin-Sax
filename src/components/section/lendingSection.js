@@ -17,7 +17,7 @@ export const LendingSection = (props) => {
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:"100px",py:{xs:"50px",md:"100px"},flexDirection:{xs:"column",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{pb:'15px'}}>
-                        <h2 className="secondaryHeader">NFT <h2 className="secondaryHeader secondaryHeaderSpecial">LENDING </h2></h2>
+                        <h2 className="secondaryHeader">NFT <span className="secondaryHeader secondaryHeaderSpecial">LENDING </span></h2>
                     </Box>
 
                     <Box sx={{pb:'20px'}}>
@@ -87,7 +87,7 @@ export const LendingSection = (props) => {
                 <Box sx={{
                     marginTop: `${stepBoxState == 0 ? "140px" : "0px"}`,
                     display:'flex',
-                    "justifyContent":"center",
+                    "justifyContent":"flex-end",
                     "alignItems":"center",
                     "alignContent":"center"
 

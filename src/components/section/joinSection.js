@@ -8,13 +8,13 @@ export const JoinSection = (props) => {
         <a id="contact_us" className="anchorForLink"></a>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:{xs:"0px",md:"100px"},flexDirection:{xs:"column-reverse",md:"row"},alignItems:{xs:"center",md:"flex-start"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
-                <Box sx={{transform: {xs:"scale(0.9)",md:'none'},display:'flex',justifyContent:'center'}}>
+                <Box sx={{transform: {xs:"scale(0.9)",md:'none'},display:'flex',justifyContent:{xs:'center',md:'flex-start'}}}>
                     <Image src="/static/images/pepes/Wave.png" height="450" width="450"/>
                 </Box>
             </Box>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{pb:'15px'}}>
-                    <h2 className="secondaryHeader">JOIN THE <h2 className="secondaryHeader secondaryHeaderSpecial">DAO </h2></h2>
+                    <h2 className="secondaryHeader">JOIN THE <span className="secondaryHeader secondaryHeaderSpecial">DAO </span></h2>
                 </Box>
 
                 <Box sx={{pb:'20px'}}>
