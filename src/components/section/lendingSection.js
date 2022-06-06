@@ -21,7 +21,7 @@ export const LendingSection = (props) => {
                     </Box>
 
                     <Box sx={{pb:'20px'}}>
-                        <h1 className="innerMainHeader">We Make Loans on your NFTs</h1>
+                        <h1 className="innerMainHeader">We Make Loans on your NFTs.</h1>
                     </Box>
 
                     <Box>
@@ -38,7 +38,7 @@ export const LendingSection = (props) => {
                                         Send us a Loan Request
                                     </h1>
                                     <h2 className="stepParagraph">
-                                        Apply through our loan request form or via NFTfi
+                                        Apply through our loan request form or via NFTfi.
                                     </h2>
                                 </Box>
                             </Box>
@@ -57,7 +57,7 @@ export const LendingSection = (props) => {
                                         We assess your request
                                     </h1>
                                     <h2 className="stepParagraph">
-                                        We will assess your assets for a fair valuation & loan terms
+                                        We will assess your assets for a fair valuation & loan terms.
                                     </h2>
                                 </Box>
                             </Box>

@@ -22,7 +22,7 @@ export const FooterSection = (props) => {
 
                 <Box sx={{mb:'0.5rem'}}>
                     <p style={{"fontSize":"15px","lineHeight":"1.5","letterSpacing":"-0.009em",color:'white',fontFamily:"var(--main-font)"}}>
-                         Goblin Sax is an NFT financialization collective and we currently make NFT-collateralized loans to NFT holders
+                         Goblin Sax is an NFT financialization collective and we currently make NFT-collateralized loans to NFT holders.
                     </p>
                 </Box>
             </Box>
