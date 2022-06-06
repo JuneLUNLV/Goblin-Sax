@@ -76,7 +76,7 @@ export const LendingSection = (props) => {
                                         We offer & disburse your loan
                                     </h1>
                                     <h2 className="stepParagraph">
-                                        Within 48 hours, we will offer a loan and can disburse funds immediately.
+                                        Within 12 hours, we will offer a loan and can disburse funds immediately.
                                     </h2>
                                 </Box>
                             </Box>

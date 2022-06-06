@@ -5,7 +5,7 @@ import Image from 'next/image';
 const socials = ["Twitter","Discord","Medium"]
 const socials2 = ["Dashboard", "Github", "Forum"]
 const links = ["https://twitter.com/goblinsax","https://discord.gg/GS6rvrvb9B","https://medium.com/@goblinsax"]
-const links2 = ["https://dash.goblinsax.xyz/","https://github.com/GringottsBank","https://gov.goblinsax.com/"]
+const links2 = ["https://dash.goblinsax.xyz/","https://github.com/GoblinSax","https://gov.goblinsax.com/"]
 export const FooterSection = (props) => {
 
     return (

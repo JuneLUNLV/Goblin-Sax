@@ -22,9 +22,9 @@ export const AboutSection = (props) => {
                 </Box>
 
                 <Box>
-                    <p className="innerParagraph">We are a collective that believes in the future of NFT financialization. As the NFT sector matures, we envision more financialization use cases coming to NFTs, such as lending, perpetual futures or options. We are now focused on unlocking liquidity from NFTs and have provided 200+ ETH in NFT-collateralized loans.
+                    <p className="innerParagraph">{"Goblin Sax is an NFT financialization collective focused on the NFT lending space. We formed in December 2021, pooling 205 ETH from 29 capital contributors. Our objective was to make loans. By May we had made over 150 loans for a profit of >20 ETH and ROI of ~30%. Our vision is to become the largest NFT loan originator."}
                     <br/><br/>
-                    We are NFT enthusiasts, data scientists, engineers and project managers. We are the people that will make NFT financialization a reality. If you are passionate about the space, we would like to work with you.</p>
+                    We are NFT enthusiasts, data scientists, engineers and project managers. We are the people that will make NFT financialization a reality. If you are passionate about the space, we would like to work with you</p>
                 </Box>
 
             </Box>
