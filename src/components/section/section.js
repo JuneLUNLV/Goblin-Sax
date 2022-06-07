@@ -57,9 +57,7 @@ export const Section = (props) => {
                 </Box>
             </Box>
         </Box>
-        <Box sx={{width:"100%", borderTop:"1px solid #DDDEE178",maxWidth:'1200px'}}>
-        
-        </Box>
+        <Box sx={{width:"100%", borderTop:"1px solid #DDDEE178",maxWidth:'1200px'}}/>    
     </section>
     </>
     )

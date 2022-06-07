@@ -61,11 +61,6 @@ export const FooterSection = (props) => {
                         }
                     </Box>                   
                 </Box>
-
-
-
-
-
             </Box>
 
             <Box>

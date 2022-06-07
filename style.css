@@ -1,55 +1,4 @@
 @font-face {
-    font-family: "Blue Goblet Oblique";
-    src: url("/static/fonts/Blue_Goblet_Oblique.otf");
-}
-
-@font-face {
-    font-family: "VT323";
-    src: url("/static/fonts/VT323_Regular.ttf");
-}
-
-
-@font-face {
-    font-family: "Teko";
-    src: url("/static/fonts/Teko-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url("/static/fonts/Montserrat-VariableFont_wght.ttf");
-}
-
-@font-face {
-    font-family: "Archivo Black";
-    src: url("/static/fonts/ArchivoBlack-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Space Brotesk";
-    src: url("/static/fonts/SpaceGrotesk-VariableFont_wght.ttf");
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url("/static/fonts/Raleway-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Goblin";
-    src: url("/static/fonts/Goblins.ttf");
-}
-
-@font-face {
-    font-family: "Minecraft";
-    src: url("/static/fonts/Minecraft.ttf");
-}
-
-@font-face {
-    font-family: "Imperial Roman";
-    src: url("/static/fonts/ImperialBT.ttf");
-}
-
-@font-face {
     font-family: "Libre Baskerville";
     src: url("/static/fonts/LibreBaskerville-Bold.ttf");
 }
@@ -122,21 +71,6 @@
 }
 
 .actionButton{
-   /* font-family: var(--main-font);
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    fill: #020710;
-    color: #020710;
-    background-color: var(--main-color);
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    border-color: #020710;
-    border-radius: 0px 0px 0px 0px;
-    box-shadow: 10px 10px 0px 0px #fbfcff;
-    padding: 17px 30px 17px 30px;
-    cursor:pointer;*/
-
     font-family: var(--main-font);
     font-size: 20px;
     font-weight: 700;
