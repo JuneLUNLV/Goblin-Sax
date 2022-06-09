@@ -29,8 +29,9 @@ const Dashboard = () => {
     <AboutSection/>
     <LendingSection/>
     <ActionSection/>
-    <JoinSection/>
     <PodcastSection/>
+    <JoinSection/>
+
 
     </Box>
   </>
