@@ -21,7 +21,7 @@ export const PodcastSection = (props) => {
                     </Box>
 
                     <Box sx={{pb:'20px'}}>
-                        <h1 className="innerMainHeader">Learn More About Goblin Sax via our Podcast</h1>
+                        <h1 className="innerMainHeader">Learn More About Goblin Sax</h1>
                     </Box>
 
                     <Box sx={{pb:'20px'}}>
@@ -46,16 +46,17 @@ export const PodcastSection = (props) => {
                         </Box>
                     </Box>
             </Box>
-            <Box sx={{width:{xs:"100%",md:"50%"},"display":"flex","justifyContent":"flex-end","alignItems":"center","alignContent":"center",display:{xs:'none',md:'block'}}}>
+            <Box sx={{width:{xs:"100%",md:"50%"},"display":"flex","justifyContent":"flex-end","alignItems":"center","alignContent":"center",}}>
                 <Box sx={{
                     display:'flex',
                     "justifyContent":"flex-end",
                     "alignItems":"center",
-                    "alignContent":"center"
-
+                    "alignContent":"center",
+                    width:'100%',
+                    marginTop:{md:'0px',xs:'30px'}
                 }}>
                     {stepBoxState == 0 ? 
-                        <Box sx={{width: '80%'}}>
+                        <Box sx={{width: {xs:"100%",md:'80%'}}}>
                         <iframe src="https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0" width="100%" height="232" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         </Box>
                      : void(0)}           
