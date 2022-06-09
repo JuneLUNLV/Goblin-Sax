@@ -6,6 +6,7 @@ import { AboutSection } from 'src/components/section/aboutSection';
 import { LendingSection } from 'src/components/section/lendingSection';
 import { ActionSection } from 'src/components/section/actionSection';
 import { JoinSection } from "src/components/section/joinSection"
+import { PodcastSection } from 'src/components/section/podcastSection';
 
 const Dashboard = () => {
   return(
@@ -29,6 +30,7 @@ const Dashboard = () => {
     <LendingSection/>
     <ActionSection/>
     <JoinSection/>
+    <PodcastSection/>
 
     </Box>
   </>

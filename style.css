@@ -4,6 +4,10 @@
 }
 
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-font: Roboto, Sans-serif;
     --main-header-font: Libre Baskerville;

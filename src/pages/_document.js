@@ -49,14 +49,14 @@ class CustomDocument extends Document {
             name="theme-color"
             content="#111827"
           />
-          <meta name="title" content="GOblin Sax" />
+          <meta name="title" content="Goblin Sax" />
           <meta name="description" content="Goblin Sax is an NFT financialization collective and we currently make NFT-collateralized loans to NFT holders." />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="GOblin Sax" />
+          <meta property="og:title" content="Goblin Sax" />
           <meta property="og:description" content="Goblin Sax is an NFT financialization collective and we currently make NFT-collateralized loans to NFT holders." />
           <meta property="og:image" content="/static/images/GS.png" />
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:title" content="GOblin Sax" />
+          <meta property="twitter:title" content="Goblin Sax" />
           <meta property="twitter:description" content="Goblin Sax is an NFT financialization collective and we currently make NFT-collateralized loans to NFT holders." />
           <meta property="twitter:image" content="/static/images/GS.png" />
         </Head>
