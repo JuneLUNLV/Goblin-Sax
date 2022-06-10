@@ -332,7 +332,13 @@ html{
     margin: 0;
     margin-top: 20px;
     background-image: linear-gradient(135deg, #020202, #060d18);
+    transition: transform 0.3s, opacity 0.3s;
 }
+
+/* .podcastBox:hover{
+    transform: translateX(-100%);
+    opacity: 0;
+} */
 
 .podcastBox2{
     margin: 0px 0px 30px 0px;
@@ -348,6 +354,7 @@ html{
     justify-content: center;
     align-items: center;
 
+
 }
 
 .podcastBoxNumber{
@@ -360,18 +367,7 @@ html{
 .slickDots{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-}
-
-.slickDotActive{
-    background: #fff;
-    border-radius: 30px;
-    height: 10px;
-    width: 37px;
-    border-radius: 10px;
-    box-shadow: 0 100px 80px rgb(0 0 0 / 4%), 0 30.1471px 24.1177px rgb(0 0 0 / 5%), 0 12.5216px 10.0172px rgb(0 0 0 / 7%), 0 4.5288px 3.62304px rgb(0 0 0 / 10%);
-    cursor: pointer;
-    margin: 0 4px;
+    margin-top: 20px; 
 }
 
 .slickDotPresent{
@@ -383,10 +379,33 @@ html{
     height: 10px;
     margin: 0 4px;
     width: 10px;
+    transition: transform 0s, width 0s;
 }
+
+.slickDotActive{
+    background: #fff;
+    border-radius: 30px;
+    height: 10px;
+    width: 37px;
+    border-radius: 10px;
+    box-shadow: 0 100px 80px rgb(0 0 0 / 4%), 0 30.1471px 24.1177px rgb(0 0 0 / 5%), 0 12.5216px 10.0172px rgb(0 0 0 / 7%), 0 4.5288px 3.62304px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    margin: 0 4px;
+    transition: transform 0.3s, width 0.3s;
+}
+
+
 
 .slickDotUnclickable{
     cursor: not-allowed;
+} 
+
+.slickDotActive:hover{
+    transform: translateY(-3px);
+}
+
+.slickDotPresent:hover{
+    transform: translateY(-3px);
 }
 
 @media screen and (max-width: 1000px) {
