@@ -331,6 +331,7 @@ html{
     width: 100%;
     margin: 0;
     margin-top: 20px;
+    background-image: linear-gradient(135deg, #020202, #060d18);
 }
 
 .podcastBox2{
@@ -346,7 +347,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(134deg, #0a0a0a, #0f131a);
+
 }
 
 .podcastBoxNumber{
