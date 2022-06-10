@@ -20,16 +20,16 @@ export const PodcastSectionTwo = (props) => {
                 </Box>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{pb:'15px'}}>
-                        <h2 className="secondaryHeader">TUNE IN TO OUR <span className="secondaryHeader secondaryHeaderSpecial"> PODCAST</span></h2>
-                    </Box>
-
-                    <Box sx={{pb:'20px'}}>
-                        <h1 className="innerMainHeader">Learn More About Goblin Sax</h1>
+                        <h2 className="secondaryHeader">🎧 TUNE IN TO OUR <span className="secondaryHeader secondaryHeaderSpecial"> PODCAST</span></h2>
                     </Box>
 
                     <Box sx={{pb:'0px'}}>
-                        <h2 className="innerParagraph">{"The Goblin Hideout is the first podcast focused solely on the emerging sector of NFT finance."}</h2>
+                        <h1 className="innerMainHeader">Learn More About Goblin Sax</h1>
                     </Box>
+
+                    {/* <Box sx={{pb:'0px'}}>
+                        <h2 className="innerParagraph">{"The Goblin Hideout is the first podcast focused solely on the emerging sector of NFT finance."}</h2>
+                    </Box> */}
 
                     <Box sx={{position:'relative'}}>
                         {/* <Box className="podcastBoxAction2">
