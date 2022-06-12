@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
 import { AppBar, Avatar, Box, IconButton, Toolbar, Tooltip, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import * as React from 'react';
@@ -8,13 +7,27 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image'
+import useScrollListener from "../hooks/useScrollListener";
+import {useState, useEffect} from 'react'
 
 const pages = ['About Us','NFT Lending', "Request a Loan","Podcast" ,'Contact Us'];
 const links = ["/#about_us","/#nft_lending","/#request_a_loan","/#podcast","/#contact_us"]
 
 export const DashboardNavbar = (props) => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
+  const [navClassList, setNavClassList] = useState([]);
+
+  const scroll = useScrollListener();
+
+  useEffect(() => {
+    const _classList = [];
+
+    if (scroll.y > 200 && scroll.y - scroll.lastY > 0)
+      _classList.push("nav-bar--hidden");
+
+    setNavClassList(_classList);
+  }, [scroll.y, scroll.lastY]);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -33,7 +46,7 @@ export const DashboardNavbar = (props) => {
 
 
   return (
-    <AppBar position="fixed" sx={{boxShadow:"none"}}>
+    <AppBar position="fixed" className={navClassList.join(" ")} sx={{boxShadow:"none",transition: "transform 250ms ease-in-out"}} >
       <Container maxWidth="lg" sx={{width:{xs:'100%',md:'80%'},maxWidth:'1400px !important'}}>
         <Toolbar disableGutters>
         <Box sx={{

@@ -287,6 +287,10 @@ html{
     text-decoration: underline;
 }
 
+.nav-bar--hidden {
+    transform: translateY(-100%);
+  }
+
 .navLink{
     text-decoration: none;
     color:white;
