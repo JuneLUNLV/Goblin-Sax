@@ -14,7 +14,7 @@ export const PodcastSectionTwo = (props) => {
     },[])
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop: "var(--main-section-interval)"}}>
-        <a id="nft_lending" className="anchorForLink"></a>
+        <a id="podcast" className="anchorForLink"></a>
         <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:{xs:"50px",md:"100px"},flexDirection:{xs:"column-reverse",md:"row"},alignItems:{xs:"flex-start",md:"center"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"},"display":"flex","justifyContent":"flex-start","alignItems":"center","alignContent":"center",}}>
                 <Box sx={{transform: {xs:"scale(0.9)",md:'none'},display:'flex',justifyContent:{xs:'center',md:'flex-start'}}}>
@@ -23,7 +23,7 @@ export const PodcastSectionTwo = (props) => {
                 </Box>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{pb:'15px'}}>
-                        <h2 className="secondaryHeader">🎧 TUNE IN TO OUR <span className="secondaryHeader secondaryHeaderSpecial"> PODCAST</span></h2>
+                        <h2 className="secondaryHeader">TUNE IN TO OUR <span className="secondaryHeader secondaryHeaderSpecial"> PODCAST</span></h2>
                     </Box>
 
                     <Box sx={{pb:'0px'}}>
@@ -44,13 +44,13 @@ export const PodcastSectionTwo = (props) => {
                         <Box className="podcastBox">
                             <Box sx={{display:'flex',alignItems:'center',flexDirection:'column',width:"95%"}}>
                                 <Box sx={{width:'100%'}}>
-                                    <h1 className="podcastBoxNumber">
+                                    <h1 className="podcastBoxNumber" style={{fontSize:'25px'}}>
                                         {`${podcastHeader[podCastPageState]}`}
                                     </h1>
                                 </Box>
 
                                 <Box sx={{mt:'15px'}}>
-                                    <h1 className="stepHeader">
+                                    <h1 className="stepHeader" style={{fontSize:'22px'}}>
                                     {`${podcastTitle[podCastPageState]}`}
                                     </h1>
                                 </Box>   

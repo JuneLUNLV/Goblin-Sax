@@ -10,13 +10,14 @@ import { PodcastSection } from 'src/components/section/podcastSection';
 import { PodcastSectionTwo } from 'src/components/section/pordcastSectionTwo';
 import { PodcastSectionThree } from 'src/components/section/podcastSectionThree';
 import { useState } from 'react';
+import Fade from 'react-reveal/Fade';
 
 const Dashboard = () => {
   const podcastStyleArray = ['style 1','style 2','style 3'];
-  const [podcastStyle,setPodcastStyle] = useState(podcastStyleArray[1])
-  const handleChange = (event) => {
-    setPodcastStyle(event.target.value);
-  };
+  // const [podcastStyle,setPodcastStyle] = useState(podcastStyleArray[1])
+  // const handleChange = (event) => {
+  //   setPodcastStyle(event.target.value);
+  // };
   return(
   <>
     <Head>
@@ -33,12 +34,16 @@ const Dashboard = () => {
         paddingRight:{xs:'16px',sm:'24px'}
       }}
     >
-    <Section/>
-    <AboutSection/>
-    <LendingSection/>
-    <ActionSection/>
 
-    <Box sx={{ minWidth: 120,display:'flex',"alignContent":"center","justifyContent":"center","alignItems":"center",mt:'100px' }}>
+    <Section/>
+    <Fade bottom>
+      <AboutSection/>
+      <LendingSection/>
+      <ActionSection/>
+      <PodcastSectionTwo/>
+      <JoinSection/>
+    </Fade>
+    {/* <Box sx={{ minWidth: 120,display:'flex',"alignContent":"center","justifyContent":"center","alignItems":"center",mt:'100px' }}>
       <h1 style={{color:'white',marginRight:"50px"}}>Select the podcast section style: </h1>
       {podcastStyleArray.length == 0? void(0) : 
         <FormControl style={{border: '1px solid white', width:"fit-content"}}>
@@ -66,10 +71,7 @@ const Dashboard = () => {
     </Box>
     {podcastStyle == 'style 1' ? <PodcastSection/> : void(0)}
     {podcastStyle == 'style 2' ? <PodcastSectionTwo/>: void(0)}
-    {podcastStyle == 'style 3' ? <PodcastSectionThree/> : void(0)}
-    <JoinSection/>
-
-
+    {podcastStyle == 'style 3' ? <PodcastSectionThree/> : void(0)} */}
     </Box>
   </>
 );

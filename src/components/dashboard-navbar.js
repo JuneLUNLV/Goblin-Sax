@@ -9,8 +9,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image'
 
-const pages = ['About Us','NFT Lending', "Request a Loan", 'Contact Us'];
-const links = ["/#about_us","/#nft_lending","/#request_a_loan","/#contact_us"]
+const pages = ['About Us','NFT Lending', "Request a Loan","Podcast" ,'Contact Us'];
+const links = ["/#about_us","/#nft_lending","/#request_a_loan","/#podcast","/#contact_us"]
 
 export const DashboardNavbar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
