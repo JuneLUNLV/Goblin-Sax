@@ -9,10 +9,11 @@ import { JoinSection } from "src/components/section/joinSection"
 import { PodcastSection } from 'src/components/section/podcastSection';
 import { PodcastSectionTwo } from 'src/components/section/pordcastSectionTwo';
 import { PodcastSectionThree } from 'src/components/section/podcastSectionThree';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 
 const Dashboard = () => {
+
   const podcastStyleArray = ['style 1','style 2','style 3'];
   // const [podcastStyle,setPodcastStyle] = useState(podcastStyleArray[1])
   // const handleChange = (event) => {

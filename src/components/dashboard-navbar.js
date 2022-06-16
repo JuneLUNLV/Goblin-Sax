@@ -8,11 +8,12 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image'
 import useScrollListener from "../hooks/useScrollListener";
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react';
+import {Link} from 'react-scroll';
 
 const pages = ['About Us','NFT Lending', "Request a Loan","Podcast" ,'Contact Us'];
-const links = ["/#about_us","/#nft_lending","/#request_a_loan","/#podcast","/#contact_us"]
-
+const links = ["#about_us","#nft_lending","#request_a_loan","#podcast","#contact_us"];
+const links2 = ["about_us","nft_lending","request_a_loan","podcast","contact_us"];
 export const DashboardNavbar = (props) => {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -88,9 +89,11 @@ export const DashboardNavbar = (props) => {
             >
               {pages.map((page,index) => (
                 <MenuItem key={page}>
-                <a target={`${"_self"}`}  href={links[index]} rel="noopener noreferrer"  className="phoneNavLink">
-                  <Typography textAlign="center">{page}</Typography>
-                </a>
+                  <Link className="phoneNavLink" to={links2[index]}  smooth={true} duration={0} onClick={()=>{
+                    handleCloseNavMenu();
+                  }}>
+                    {page}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>

@@ -1,17 +1,23 @@
 import { Box } from '@mui/material';
 import Image from 'next/image';
-import {useState,useEffect} from 'react';
+import {useState,useEffect, useMemo} from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const podcastHeader = ['Episode 1', 'Episode 2','Episode 3','Episode 4','Episode 5']
 const podcastTitle = ['Introducing the Goblin Hideout', 'Episode 2 Title','Episode 3 Title','Episode 4 Title','Episode 5 Title']
-const podcastEle = (<iframe src="https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>)
+const podcastSrc = ["https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0",
+                    "https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0",
+                    "https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0",
+                    "https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0",
+                    "https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0"]
 
 export const PodcastSectionTwo = (props) => {
     const [podCastPageState, setPodCastPageState] = useState(0);
-    console.log(podcastEle);
-    useEffect(()=>{
-
-    },[])
+    const [swiper, setSwiper] = useState();
+    const onSlideChange = ()=>{
+        setPodCastPageState(swiper.activeIndex)
+    }
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop: "var(--main-section-interval)"}}>
         <a id="podcast" className="anchorForLink"></a>
@@ -29,46 +35,49 @@ export const PodcastSectionTwo = (props) => {
                     <Box sx={{pb:'0px'}}>
                         <h1 className="innerMainHeader">Learn More About Goblin Sax</h1>
                     </Box>
+                        <Swiper
+                        spaceBetween={20}
+                        slidesPerView={1}
+                        onSwiper={(swiper) => setSwiper(swiper)}
+                        onSlideChange={() => onSlideChange()}
+                        >
+                        {podcastHeader.map((item,index)=>{
+                            return(
+                            <SwiperSlide key={index}>
+                            <Box className="podcastBox">
+                                <Box sx={{display:'flex',alignItems:'center',flexDirection:'column',width:"95%"}}>
+                                    <Box sx={{width:'100%'}}>
+                                        <h1 className="podcastBoxNumber" style={{fontSize:'25px'}}>
+                                            {`${podcastHeader[index]}`}
+                                        </h1>
+                                    </Box>
 
-                    {/* <Box sx={{pb:'0px'}}>
-                        <h2 className="innerParagraph">{"The Goblin Hideout is the first podcast focused solely on the emerging sector of NFT finance."}</h2>
-                    </Box> */}
-
-                    <Box sx={{position:'relative'}}>
-                        {/* <Box className="podcastBoxAction2">
-                            {`<`}
-                        </Box>
-                        <Box className="podcastBoxAction1">
-                            {">"}
-                        </Box> */}
-                        <Box className="podcastBox">
-                            <Box sx={{display:'flex',alignItems:'center',flexDirection:'column',width:"95%"}}>
-                                <Box sx={{width:'100%'}}>
-                                    <h1 className="podcastBoxNumber" style={{fontSize:'25px'}}>
-                                        {`${podcastHeader[podCastPageState]}`}
-                                    </h1>
-                                </Box>
-
-                                <Box sx={{mt:'15px'}}>
-                                    <h1 className="stepHeader" style={{fontSize:'22px'}}>
-                                    {`${podcastTitle[podCastPageState]}`}
-                                    </h1>
-                                </Box>   
-                                    <Box sx={{width: {xs:"100%",md:'100%'},mt:"30px"}}>
-                                    {podCastPageState == 0 ? <iframe src="https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> : <Box sx={{
+                                    <Box sx={{mt:'15px'}}>
+                                        <h1 className="stepHeader" style={{fontSize:'22px'}}>
+                                        {`${podcastTitle[index]}`}
+                                        </h1>
+                                    </Box>   
+                                        <Box sx={{width: {xs:"100%",md:'100%'},mt:"30px"}}>
+                                        {index == 0 ? <iframe src="https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> : <Box sx={{
                                         height:'152px',
                                         width: '100%'
-                                    }}/>}
-                                    </Box>
-                                    <Box className="slickDots">
-                                        <Box className={`${podCastPageState == 0 ? "slickDotActive" : "slickDotPresent"}`} onClick={()=>setPodCastPageState(0)}/>
-                                        <Box className={`${podCastPageState == 1 ? "slickDotActive" : "slickDotPresent"}`} onClick={()=>setPodCastPageState(1)}/>
-                                        <Box className={`${podCastPageState == 2 ? "slickDotActive" : "slickDotPresent"}`} onClick={()=>setPodCastPageState(2)}/>
-                                        <Box className={`${podCastPageState == 3 ? "slickDotActive" : "slickDotPresent"}`} onClick={()=>setPodCastPageState(3)}/>
-                                        <Box className={`${podCastPageState == 4 ? "slickDotActive" : "slickDotPresent"}`} onClick={()=>setPodCastPageState(4)}/>
+                                        }}/>}
                                     </Box>
                                 </Box>
                             </Box>
+                        </SwiperSlide>
+                            )
+                        })}
+
+                        </Swiper>
+                        <Box className="slickDots">
+                            {
+                                podcastHeader.map((item,index)=>{
+                                    return(
+                                        <Box key={index} className={`${podCastPageState == index ? "slickDotActive" : "slickDotPresent"}`} onClick={()=>swiper.slideTo(index)}/>
+                                    )
+                                })
+                            }
                         </Box>
                     </Box>
             </Box>
