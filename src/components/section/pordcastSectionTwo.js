@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const podcastHeader = ['Episode 1', 'Episode 2','Episode 3','Episode 4','Episode 5']
-const podcastTitle = ['Introducing the Goblin Hideout', 'Episode 2 Title','Episode 3 Title','Episode 4 Title','Episode 5 Title']
+const podcastTitle = ['Introducing the Goblin Hideout', 'Abacus Spot','Episode 3 Title','Episode 4 Title','Episode 5 Title']
 const podcastSrc = ["https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0",
-                    "https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0",
+                    "https://open.spotify.com/embed/episode/5mMFHCKy2NwkDVkBsloo33?utm_source=generator&theme=0",
                     "https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0",
                     "https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0",
                     "https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0"]
@@ -58,7 +58,7 @@ export const PodcastSectionTwo = (props) => {
                                         </h1>
                                     </Box>   
                                         <Box sx={{width: {xs:"100%",md:'100%'},mt:"30px"}}>
-                                        {index == 0 ? <iframe src="https://open.spotify.com/embed/episode/2RULVxhnv54T9cfSxNo61z?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> : <Box sx={{
+                                        {index == 0 || index == 1 ? <iframe src={podcastSrc[index]} width="100%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> : <Box sx={{
                                         height:'152px',
                                         width: '100%'
                                         }}/>}
