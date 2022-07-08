@@ -19,8 +19,7 @@ const App = (props) => {
   const getLayout = Component.getLayout ?? ((page) => page);
 
   return (
-    <React.StrictMode>
-        <CacheProvider value={emotionCache}>
+      <CacheProvider value={emotionCache}>
       <Head>
         <title>
         Goblin Sax
@@ -40,7 +39,6 @@ const App = (props) => {
           </ThemeProvider>
         </LocalizationProvider>
       </CacheProvider>
-    </React.StrictMode>
   );
 };
 
