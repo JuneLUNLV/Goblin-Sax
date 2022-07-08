@@ -6,7 +6,10 @@ import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { createEmotionCache } from '../utils/create-emotion-cache';
 import { theme } from '../theme';
-import '../../style.css'
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from '../app/store';
+import '../../global_style.css'
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -16,7 +19,8 @@ const App = (props) => {
   const getLayout = Component.getLayout ?? ((page) => page);
 
   return (
-    <CacheProvider value={emotionCache}>
+    <React.StrictMode>
+        <CacheProvider value={emotionCache}>
       <Head>
         <title>
         Goblin Sax
@@ -26,13 +30,17 @@ const App = (props) => {
           content="initial-scale=1, width=device-width"
         />
       </Head>
-      <LocalizationProvider dateAdapter={AdapterDateFns}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          {getLayout(<Component {...pageProps} />)}
-        </ThemeProvider>
-      </LocalizationProvider>
-    </CacheProvider>
+
+        <LocalizationProvider dateAdapter={AdapterDateFns}>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Provider store={store}>
+            {getLayout(<Component {...pageProps} />)}
+            </Provider>
+          </ThemeProvider>
+        </LocalizationProvider>
+      </CacheProvider>
+    </React.StrictMode>
   );
 };
 

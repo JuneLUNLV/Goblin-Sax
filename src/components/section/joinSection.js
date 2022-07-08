@@ -6,7 +6,7 @@ export const JoinSection = (props) => {
     return (
         <section style={{width: "100%",display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center',marginTop: "var(--main-section-interval)"}}>
         <a id="contact_us" className="anchorForLink"></a>
-        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",py:{xs:"0px",md:"100px"},flexDirection:{xs:"column",md:"row"},alignItems:{xs:"center",md:"flex-start"}}}>
+        <Box sx={{maxWidth:'1200px',display:'flex',width:"100%",pb:{xs:"0px",md:"100px"},flexDirection:{xs:"column",md:"row"},alignItems:{xs:"center",md:"flex-start"}}}>
             <Box sx={{width:{xs:"100%",md:"50%"}}}>
                 <Box sx={{pb:'15px'}}>
                     <h2 className="secondaryHeader">JOIN THE <span className="secondaryHeader secondaryHeaderSpecial">DAO </span></h2>

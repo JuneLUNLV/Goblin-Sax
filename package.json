@@ -1,16 +1,12 @@
 {
-  "name": "material-kit-react",
-  "author": "Devias IO",
-  "licence": "MIT",
-  "version": "2.0.0",
-  "private": false,
+  "name": "goblin-sax-typescript",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev -p 3004",
     "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "lint": "next lint",
-    "lint-fix": "next lint --fix"
+    "start": "next start -p 3004",
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/cache": "^11.5.0",
@@ -25,21 +21,37 @@
     "date-fns": "^2.25.0",
     "formik": "^2.1.5",
     "history": "^5.0.0",
-    "next": "^12.0.3-canary.7",
-    "nprogress": "^0.2.0",
+    "next": "12.2.1",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
+    "react": "18.2.0",
     "react-chartjs-2": "^3.0.4",
-    "react-dom": "^17.0.2",
-    "react-perfect-scrollbar": "^1.5.8",
+    "react-dom": "18.2.0",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.7",
     "swiper": "^8.2.4",
     "uuid": "^8.3.0",
-    "yup": "^0.32.9"
+    "yup": "^0.32.9",
+    "@reduxjs/toolkit": "^1.8.1",
+    "react-redux": "^8.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-next": "12.0.3-canary.7"
+    "@types/node": "18.0.3",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.1",
+    "typescript": "4.7.4",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "web-vitals": "^2.1.0"
   }
 }

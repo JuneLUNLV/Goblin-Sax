@@ -11,6 +11,8 @@ import { PodcastSectionTwo } from 'src/components/section/pordcastSectionTwo';
 import { PodcastSectionThree } from 'src/components/section/podcastSectionThree';
 import { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
+import { Counter } from 'src/components/counter/Counter';
+
 
 const Dashboard = () => {
 
@@ -25,6 +27,7 @@ const Dashboard = () => {
       <title>
         Goblin Sax
       </title>
+      <link href="/static/style/landing_style.css" rel="stylesheet" key="test"/>
     </Head>
     <Box
       component="main"
@@ -44,35 +47,6 @@ const Dashboard = () => {
       <PodcastSectionTwo/>
       <JoinSection/>
     </Fade>
-    {/* <Box sx={{ minWidth: 120,display:'flex',"alignContent":"center","justifyContent":"center","alignItems":"center",mt:'100px' }}>
-      <h1 style={{color:'white',marginRight:"50px"}}>Select the podcast section style: </h1>
-      {podcastStyleArray.length == 0? void(0) : 
-        <FormControl style={{border: '1px solid white', width:"fit-content"}}>
-        <InputLabel id="demo-simple-select-label"></InputLabel>
-        <Select
-          value={podcastStyle}
-          autoWidth
-          onChange={handleChange}
-          style={{color:"white"}}
-          renderValue={(selected) => {
-              return <em>{selected}</em>;
-          }}
-        >
-          {
-            podcastStyleArray.map((item,index)=>{
-              return(
-                <MenuItem key={item} value={item}>{item}</MenuItem>
-              )
-            })
-          }
-        </Select>
-      </FormControl>  
-      }
-
-    </Box>
-    {podcastStyle == 'style 1' ? <PodcastSection/> : void(0)}
-    {podcastStyle == 'style 2' ? <PodcastSectionTwo/>: void(0)}
-    {podcastStyle == 'style 3' ? <PodcastSectionThree/> : void(0)} */}
     </Box>
   </>
 );

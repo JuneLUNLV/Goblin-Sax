@@ -7,7 +7,7 @@ const NotFound = () => (
   <>
     <Head>
       <title>
-        404 | Material Kit
+        404 | Goblin Sax
       </title>
     </Head>
     <Box
@@ -29,31 +29,19 @@ const NotFound = () => (
         >
           <Typography
             align="center"
-            color="textPrimary"
+            color="white"
             variant="h1"
           >
             404: The page you are looking for isn’t here
           </Typography>
           <Typography
             align="center"
-            color="textPrimary"
+            color="white"
             variant="subtitle2"
           >
             You either tried some shady route or you came here by mistake.
             Whichever it is, try using the navigation
           </Typography>
-          <Box sx={{ textAlign: 'center' }}>
-            <img
-              alt="Under development"
-              src="/static/images/undraw_page_not_found_su7k.svg"
-              style={{
-                marginTop: 50,
-                display: 'inline-block',
-                maxWidth: '100%',
-                width: 560
-              }}
-            />
-          </Box>
           <NextLink
             href="/"
             passHref
@@ -64,7 +52,7 @@ const NotFound = () => (
               sx={{ mt: 3 }}
               variant="contained"
             >
-              Go back to dashboard
+              Go back to homepage
             </Button>
           </NextLink>
         </Box>
